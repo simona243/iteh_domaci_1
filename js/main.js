@@ -109,3 +109,26 @@ function sortTable() {
       }
     }
   }
+
+  function searchTable() {
+    var searchInput = document.getElementById("pretraga");
+ 
+    var productsTableBody = document.getElementById("table");
+
+    var input = searchInput.value;
+    var filter = input.toLowerCase();
+     // Skrivanje svih redova
+    var rows = productsTableBody.rows;
+    for (var i = 1; i < rows.length; i++) {
+      rows[i].style.display = "none";
+    }
+    
+    // Prikazivanje redova koji sadrže uneti tekst
+    for (var i = 1; i < rows.length; i++) {
+      var productName = rows[i].cells[1].textContent.toLowerCase();
+      console.log( rows[i].cells[1].textContent.toLowerCase())
+      if (productName.includes(filter)) {
+        rows[i].style.display = "";
+      }
+    }
+  }

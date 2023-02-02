@@ -30,10 +30,15 @@
 
 </head>
 <body style="background: #faf8d4;";>
- 
+        <nav class="navbar navbar-light bg-dark">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="pretraga" onkeyup="searchTable()" >
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </nav>
 
         <div class="pocetna">
- 
+
 
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Dodaj novu knjigu</button>
                 <button type="button" class="btn btn-primary" onclick="sortTable()" >Sortiraj rastuce</button>
