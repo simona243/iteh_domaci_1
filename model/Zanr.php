@@ -8,6 +8,10 @@
             $this->naziv_zanra=$naziv_zanra; 
         }
  
+        public static function vratiSve($conn){
+            $upit = "select * from zanr";
+            return $conn->query($upit);
+        }
       
     }
     
