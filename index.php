@@ -36,6 +36,8 @@
  
 
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Dodaj novu knjigu</button>
+                <button type="button" class="btn btn-primary" onclick="sortTable()" >Sortiraj rastuce</button>
+
 
                 <table class="table table-dark" id="table">
                 <thead>
