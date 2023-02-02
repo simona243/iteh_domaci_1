@@ -24,7 +24,7 @@
             
             return $conn->query($upit);
         }
-        public static function vratiSveProizvode($conn){
+        public static function vratiSve($conn){
             $upit = "select * from knjiga k inner join zanr z on k.zanr=z.id_zanra";
             return $conn->query($upit);
         }        

@@ -4,7 +4,7 @@
         $hostname = "localhost";
         $username = "root";
         $password = "";
-        $database = "knjizara";
+        $database = "biblioteka";
         
         $conn = mysqli_connect($hostname,$username,$password,$database) or die("Database connection failed");
      
