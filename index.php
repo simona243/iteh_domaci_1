@@ -53,9 +53,9 @@
                             <td> <?php   echo $red['naziv_zanra'];        ?> </td>
 
                             <td><button type="button" class="btn btn-danger" onclick="obrisi(<?php echo   $red['id'];?>)">Obrisi</button>
-                            <button type="button" class="btn btn-success"    >Detalji</button></td>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalDiscount" onclick="prikazi(<?php echo   $red['id'];?>)"   >Detalji</button></td>
                         </tr>
-
+                        
 
                 <?php endwhile;?>
                 </tbody>
@@ -66,6 +66,81 @@
 
   
  
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <!--Modal: modalDiscount-->
+    <div class="modal fade right" id="modalDiscount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true" data-backdrop="true">
+      <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header">
+            <p class="heading" id="nazivPreview"> 
+               
+            </p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+
+            <div class="row">
+         
+
+              <div class="col-9">
+                <p id="opisPreview"> </p>
+           
+                <h2>
+                  <span class="badge" id="autorPreview" > </span>
+                </h2>
+
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!--Modal: modalDiscount-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <script src="js/main.js"></script>
 
        
