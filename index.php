@@ -52,7 +52,7 @@
                             <td> <?php   echo $red['cena'];        ?> </td>
                             <td> <?php   echo $red['naziv_zanra'];        ?> </td>
 
-                            <td><button type="button" class="btn btn-danger" >Obrisi</button>
+                            <td><button type="button" class="btn btn-danger" onclick="obrisi(<?php echo   $red['id'];?>)">Obrisi</button>
                             <button type="button" class="btn btn-success"    >Detalji</button></td>
                         </tr>
 
@@ -66,7 +66,9 @@
 
   
  
+        <script src="js/main.js"></script>
 
+       
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
