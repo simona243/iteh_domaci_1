@@ -34,7 +34,7 @@ class User{
                 $myArray[] = $row;
             }
         }
- 
+       
         return $myArray[0]["id"];
 
     }
